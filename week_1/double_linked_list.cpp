@@ -1,7 +1,5 @@
 #include <iostream>
-using namespace std;
 
-// A doubly linked list node
 class Node {
 public:
   int data;
@@ -25,14 +23,12 @@ void link_nodes(Node *&head) {
   }
 }
 
-// Insert at the beginning
 void insertBeg(Node *&head, int newData) {
   Node *new_node = new Node(newData, head);
   head = new_node;
   link_nodes(head);
 }
 
-// Insert after a given node
 void insertAfter(Node *prevNode, int newData) {
   if (prevNode == nullptr)
     return;
@@ -42,7 +38,6 @@ void insertAfter(Node *prevNode, int newData) {
   link_nodes(prevNode);
 }
 
-// Insert at the end
 void insertAtEnd(Node *&head, int newData) {
   Node *new_node = new Node(newData, nullptr);
 
@@ -59,21 +54,20 @@ void insertAtEnd(Node *&head, int newData) {
   link_nodes(temp);
 }
 
-// Print forward and backward
 void printList(Node *node) {
   Node *last = nullptr;
-  cout << "\nForward: ";
+  std::cout << "\nForward: ";
   while (node != nullptr) {
-    cout << node->data << " ";
+    std::cout << node->data << " ";
     last = node;
     node = node->next;
   }
-  cout << "\nReverse: ";
+  std::cout << "\nReverse: ";
   while (last != nullptr) {
-    cout << last->data << " ";
+    std::cout << last->data << " ";
     last = last->prev;
   }
-  cout << "\n";
+  std::cout << "\n";
 }
 
 int main() {
@@ -83,7 +77,7 @@ int main() {
   insertBeg(head, 40);
   insertAtEnd(head, 40);
   insertAfter(head->next, 8);
-  cout << "DLL is:";
+  std::cout << "DLL is:";
   printList(head);
   return 0;
 }

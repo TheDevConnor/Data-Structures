@@ -4,13 +4,11 @@
 
 #define MAX 100
 
-// structure of a stack node
-class Stack {
+  class Stack {
 public:
   int top;
   char exp[MAX]; // Maximum size of Stack
   Stack() { top = -1; }
-  // functions prototypes
   bool push(char item);
   char pop();
 };
@@ -37,8 +35,6 @@ char Stack::pop() {
   }
 }
 
-// Returns 1 if character1 and character2 are matching left
-// and right Brackets
 int isMatchingPair(char character1, char character2) {
   if (character1 == '(' && character2 == ')')
     return 1;
@@ -50,7 +46,6 @@ int isMatchingPair(char character1, char character2) {
     return 0;
 }
 
-// Return 1 if expression has balanced Brackets
 int areParenthesisBalanced(char exp[]) {
   Stack s;
   int i = 0;

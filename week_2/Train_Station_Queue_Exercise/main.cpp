@@ -24,7 +24,6 @@ public:
 
   bool empty() const { return front == nullptr; }
 
-  // FUNCTION 1 TO IMPLEMENT
   void enqueue(std::string passenger) {
     Node *new_node = new Node(passenger);
 
@@ -37,7 +36,6 @@ public:
     }
   }
 
-  // FUNCTION 2 TO IMPLEMENT
   std::string dequeue() {
     if (empty())
       throw std::string("Queue is empty! Nobody to the board.");

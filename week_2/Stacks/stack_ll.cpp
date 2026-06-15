@@ -1,5 +1,4 @@
 #include <iostream>
-using namespace std;
 
 struct Node {
   int data;
@@ -43,15 +42,15 @@ public:
   
   void printList() {
     if (isEmpty()) {
-      cout << "\nStack is empty";
+      std::cout << "\nStack is empty";
       return;
     }
     Node *temp = top;
     while (temp != nullptr) {
-      cout << temp->data << " -> ";
+      std::cout << temp->data << " -> ";
       temp = temp->next;
     }
-    cout << "NULL" << endl;
+    std::cout << "NULL" << std::endl;
   }
 };
 
@@ -62,10 +61,10 @@ int main() {
   s.push(33);
   s.push(44);
   s.printList();
-  cout << "\nTop element is " << s.peek() << endl;
+  std::cout << "\nTop element is " << s.peek() << std::endl;
   s.pop();
   s.pop();
   s.printList();
-  cout << "\nTop element is " << s.peek() << endl;
+  std::cout << "\nTop element is " << s.peek() << std::endl;
   return 0;
 }

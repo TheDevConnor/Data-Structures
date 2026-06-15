@@ -1,8 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
-// Linked list node
 class Node {
 public:
   int data;
@@ -14,13 +11,11 @@ public:
   }
 };
 
-// Insert at the beginning
 void insertBeg(Node *&head, int newData) {
   Node *new_node = new Node(newData, head);
   head = new_node;
 }
 
-// Insert after a given node
 void insertAfter(Node *prevNode, int newData) {
   if (prevNode == nullptr)
     return;
@@ -29,7 +24,6 @@ void insertAfter(Node *prevNode, int newData) {
   prevNode->next = new_node;
 }
 
-// Insert at the end
 void insertLast(Node *&head, int newData) {
   Node *new_node = new Node(newData, nullptr);
 
@@ -45,13 +39,12 @@ void insertLast(Node *&head, int newData) {
   temp->next = new_node;
 }
 
-// Print the list
 void printList(Node *node) {
   while (node != nullptr) {
-    cout << node->data << " -> ";
+    std::cout << node->data << " -> ";
     node = node->next;
   }
-  cout << "NULL\n";
+  std::cout << "NULL\n";
 }
 
 int main() {
@@ -62,7 +55,7 @@ int main() {
   insertLast(head, 4);        // 1 -> 7 -> 6 -> 4
   insertAfter(head->next, 8); // after 7
 
-  cout << "Linked list:\n";
+  std::cout << "Linked list:\n";
   printList(head);
 
   return 0;

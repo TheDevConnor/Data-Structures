@@ -14,7 +14,6 @@ int pow(int base, int exp) {
           : (base * pow(base, exp - 1)));
 }
 
-// 1^1 + 2^2 + 3^3 + ... + n^n
 int TotalSumToPower(int n, int p) {
   return ((n == 0) 
           ? 0

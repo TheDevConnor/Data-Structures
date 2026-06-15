@@ -6,7 +6,6 @@
 template<typename T>
 class SLLNode {
 public:
-    //T() - default template value
     SLLNode(const T& d = T(), SLLNode<T>* n = nullptr) {
         data = d;
         next = n;
@@ -14,7 +13,6 @@ public:
 
     T data;
     SLLNode<T>* next;
-private:
 };
 
 #endif

@@ -21,10 +21,10 @@ public:
 
 private:
     T* data;
-    unsigned queueSize; //the actual number of elements in the queue
-    unsigned capacity; //the max number of elements in the queue
-    int frnt; //the index storing the front of the queue
-    int bck;  //the index storing the back of the queue
+    unsigned queueSize;
+    unsigned capacity;
+    int frnt;
+    int bck;
 };
 
 #endif

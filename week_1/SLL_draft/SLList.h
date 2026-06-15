@@ -8,21 +8,20 @@ class SLList {
 public:
     SLList();
 
-    unsigned size() const; //return the size of the linked list
-    bool empty() const; //return true if the list is empty and false otherwise
+    unsigned size() const;
+    bool empty() const;
 
-    void push_front(const T& value); //insert at the beginning of the list
-    void push_back(const T& value); //insert at the end of the list
-    void print() const; //print the content of the list
+    void push_front(const T& value);
+    void push_back(const T& value);
+    void print() const;
 
-    /******************IMPLEMENT THIS*******/
     void pop_front();
     void pop_back();
 
 private:
-    SLLNode<T>* head; //the first node in the linked list
-    SLLNode<T>* tail; //the last node in the linked list
-    unsigned listSize; // the size of the list
+    SLLNode<T>* head;
+    SLLNode<T>* tail;
+    unsigned listSize;
 };
 
 #endif

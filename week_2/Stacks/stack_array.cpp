@@ -1,4 +1,3 @@
-// Array implementation of stack functions
 #include <iostream>
 
 #define MAX 100
@@ -6,9 +5,8 @@ class Stack {
   int top;
 
 public:
-  int a[MAX]; // Maximum size of Stack
+  int a[MAX];
   Stack() { top = -1; }
-  // functions prototypes
   bool push(int item);
   int pop();
   int peek();
