@@ -1,0 +1,54 @@
+@module "p5"
+
+const SIZE: int  = 7;
+const EMPTY: int = -1;
+const DEL: int   = -2;
+
+let table: [int; 7];
+
+const init -> fn () void {
+    loop [i: int = 0](i < SIZE) : (++i) {
+        table[i] = EMPTY;
+    }
+}
+
+const hash -> fn (key: int) int { return key % SIZE; }
+
+const insert -> fn (key: int) void {
+    let index: int = hash(key);
+    
+    loop [i: int = 0](i < SIZE) : (++i) {
+        let pos: int = (index + i) % SIZE;
+
+        if (table[pos] == EMPTY) {
+            table[pos] = key;
+            return;
+        }
+    }
+}
+
+const search -> fn (key: int) int {
+    loop [i: int = 0](i < SIZE) : (++i) {
+        if (table[i] == key) return i;
+    }
+
+    return -1;
+}
+
+const print_table -> fn () void {
+    loop [i: int = 0](i < SIZE) : (++i) {
+        output("[", i, "]: ", table[i], "\n");
+    }
+}
+
+// pub const main -> fn () int {
+//     init(); 
+
+//     let keys: [int; 5] = [10, 20, 35, 14, 21];
+//     loop [i: int = 0](i < 5) : (++i) { insert(keys[i]); }
+//     print_table();
+
+//     output("Search 14: index ", search(14), "\n");
+
+//     return 0;
+// }

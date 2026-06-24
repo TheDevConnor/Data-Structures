@@ -1,0 +1,5 @@
+@module "p2"
+
+// pub const main -> fn () int {
+//     return 0;
+// }

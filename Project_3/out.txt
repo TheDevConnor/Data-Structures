@@ -1,0 +1,540 @@
+================================
+ Graph - Adjancency List
+================================
+{ ABE: {DTW, 424km, $374}  }
+{ DTW: {BOS, 632km, $222} {EWR, 487km, $338} {FNT, 56km, $279} {ORD, 235km, $194} {TPA, 983km, $232}  }
+{ ABQ: {IAH, 744km, $106}  }
+{ IAH: {ATL, 689km, $85} {DFW, 224km, $173} {ELP, 667km, $306} {EWR, 1400km, $273} {ORD, 925km, $348} {TUL, 429km, $115}  }
+{ ACY: {BOS, 274km, $225}  }
+{ BOS: {BGR, 201km, $191} {DFW, 1562km, $193} {DTW, 632km, $374} {ORD, 867km, $376}  }
+{ AFW: {AUS, 194km, $123}  }
+{ AUS: {ATL, 812km, $164} {DFW, 183km, $163} {ORD, 972km, $290}  }
+{ AGS: {ATL, 143km, $267}  }
+{ ATL: {ABY, 146km, $102} {AUS, 812km, $102} {BGR, 1134km, $228} {BOS, 946km, $250} {BZN, 1641km, $184} {DFW, 732km, $130} {EWR, 745km, $246} {MDW, 590km, $231} {MIA, 595km, $322} {ORD, 606km, $82} {TPA, 406km, $350} {YIP, 595km, $118}  }
+{ ALB: {BOS, 145km, $312} {DAY, 576km, $159} {DTW, 488km, $376} {ORD, 723km, $200}  }
+{ DAY: {MIA, 998km, $100} {TPA, 828km, $317}  }
+{ ORD: {AFW, 806km, $364} {ALB, 723km, $362} {ATL, 606km, $93} {BUF, 473km, $191} {CWA, 213km, $156} {DAY, 240km, $198} {DTW, 235km, $204} {IAH, 925km, $279} {MIA, 1197km, $93} {PIA, 130km, $336}  }
+{ ALW: {YKM, 112km, $262}  }
+{ YKM:  }
+{ AMA: {DFW, 313km, $240}  }
+{ DFW: {BOS, 1562km, $84} {DTW, 987km, $144} {LAW, 140km, $366} {MOB, 540km, $310} {TUL, 237km, $261}  }
+{ ANC: {ADQ, 252km, $277} {JNU, 571km, $294} {MIA, 4004km, $292} {ORD, 2846km, $128}  }
+{ ADQ:  }
+{ JNU:  }
+{ MIA: {ATL, 595km, $114} {DFW, 1121km, $259} {DTW, 1145km, $200} {EWR, 1086km, $165} {MDW, 1182km, $75} {ORD, 1197km, $312}  }
+{ ABY:  }
+{ BGR:  }
+{ BZN: {DTW, 1401km, $191}  }
+{ EWR: {ATL, 745km, $83} {BGR, 393km, $316} {BOS, 200km, $173} {DTW, 487km, $360} {ORD, 719km, $172} {YIP, 497km, $164}  }
+{ MDW: {UIN, 221km, $351}  }
+{ TPA: {ATL, 406km, $374} {BOS, 1185km, $264} {BUF, 1054km, $133} {DFW, 929km, $297} {DTW, 983km, $87} {EWR, 998km, $245} {MIA, 204km, $120}  }
+{ YIP: {ATL, 595km, $203} {FNT, 51km, $273}  }
+{ ATW: {ORD, 160km, $126}  }
+{ AVP: {CAK, 300km, $87}  }
+{ CAK: {ATL, 528km, $366}  }
+{ BDL: {ATL, 859km, $298} {BOS, 91km, $121} {EWR, 115km, $238}  }
+{ BFM: {ABY, 238km, $320}  }
+{ BHM: {ATL, 134km, $195} {EWR, 850km, $155} {TPA, 460km, $365}  }
+{ BIL: {BTM, 191km, $202} {HLN, 174km, $314}  }
+{ BTM:  }
+{ HLN:  }
+{ BKL: {MIA, 1087km, $158}  }
+{ BMI: {DTW, 314km, $83}  }
+{ BNA: {ATL, 214km, $75} {AUS, 753km, $304} {ORD, 409km, $175}  }
+{ BPT: {DFW, 270km, $191}  }
+{ BRD: {BJI, 86km, $324}  }
+{ BJI:  }
+{ BTR: {AHN, 515km, $278} {MLU, 146km, $306}  }
+{ AHN:  }
+{ MLU:  }
+{ BTV: {DTW, 536km, $361}  }
+{ BUF: {ALB, 251km, $235} {DTW, 240km, $194} {EWR, 282km, $270} {ORD, 473km, $101}  }
+{ BWI: {BOS, 370km, $158} {BUF, 281km, $212} {DTW, 408km, $307} {OMA, 1025km, $217} {TPA, 842km, $215}  }
+{ OMA:  }
+{ CAE: {EWR, 602km, $106} {YIP, 587km, $164}  }
+{ CHS: {BGR, 1018km, $335}  }
+{ CLE: {DAL, 1015km, $295} {DFW, 1021km, $278} {EWR, 404km, $280} {IAH, 1091km, $277} {ORD, 316km, $160} {TPA, 927km, $123}  }
+{ DAL: {DFW, 12km, $150} {ELP, 562km, $329}  }
+{ CLT: {AGS, 140km, $326} {BOS, 727km, $120} {DTW, 500km, $76} {MIA, 651km, $264} {MOB, 527km, $315} {ORD, 599km, $279}  }
+{ MOB:  }
+{ CMH: {ATL, 446km, $118} {DFW, 927km, $306} {DTW, 155km, $187} {MDW, 284km, $78} {ORD, 296km, $281} {TPA, 829km, $374}  }
+{ CMI: {ORD, 135km, $343}  }
+{ COU: {DAY, 435km, $226}  }
+{ CRP: {IAH, 201km, $379}  }
+{ CSG: {ATL, 83km, $305}  }
+{ CVG: {BUF, 410km, $330} {DAY, 64km, $202} {DFW, 811km, $116} {DTW, 229km, $97} {EWR, 569km, $257} {MIA, 948km, $271}  }
+{ CWA: {DTW, 363km, $211}  }
+{ ELP: {YIP, 1447km, $141}  }
+{ DBQ: {ORD, 147km, $116}  }
+{ DCA: {ALB, 318km, $373} {ATL, 547km, $174} {DAY, 391km, $85} {DFW, 1192km, $296} {ORD, 612km, $108} {TPA, 814km, $312}  }
+{ LAW:  }
+{ TUL: {ATL, 674km, $145}  }
+{ DSM: {ORD, 299km, $379}  }
+{ FNT: {DTW, 56km, $150}  }
+{ EAT: {YKM, 60km, $350}  }
+{ EYW: {MIA, 126km, $171}  }
+{ FLL: {DFW, 1119km, $296} {DTW, 1127km, $214} {MIA, 21km, $89} {ORD, 1182km, $220}  }
+{ FSD: {ORD, 462km, $201}  }
+{ FWA: {OMA, 559km, $112}  }
+{ GEG: {BTM, 265km, $324}  }
+{ GGG: {DFW, 140km, $160}  }
+{ GJT: {FAT, 632km, $105}  }
+{ FAT:  }
+{ GNV: {ATL, 300km, $297}  }
+{ GRB: {ORD, 174km, $213}  }
+{ GRR: {DTW, 120km, $123} {ORD, 137km, $216}  }
+{ GSO: {ATL, 306km, $95} {DTW, 460km, $320} {EWR, 446km, $214}  }
+{ GSP: {DFW, 862km, $121}  }
+{ GTF: {HLN, 67km, $178}  }
+{ HNL: {ITO, 216km, $354}  }
+{ ITO:  }
+{ HOU: {ATL, 696km, $296} {TPA, 781km, $214}  }
+{ IAD: {ATL, 533km, $108} {BOS, 413km, $327} {DTW, 383km, $94} {EWR, 213km, $371} {ORD, 589km, $257}  }
+{ ICT: {DFW, 328km, $325} {TUS, 856km, $183}  }
+{ TUS:  }
+{ IDA: {DFW, 1095km, $262}  }
+{ IND: {BOS, 817km, $242} {DFW, 762km, $165} {DTW, 231km, $157} {FNT, 260km, $109} {TPA, 838km, $312}  }
+{ JAN: {DFW, 408km, $164}  }
+{ JAX: {ATL, 270km, $124} {ORD, 865km, $144}  }
+{ JFK: {ATL, 760km, $169} {BOS, 187km, $358} {DTW, 508km, $254} {ORD, 740km, $93} {TPA, 1005km, $182}  }
+{ LAS: {ATL, 1747km, $182} {DFW, 1055km, $342} {ELP, 584km, $133} {EWR, 2227km, $262} {OMA, 1099km, $367} {ORD, 1515km, $283} {RNO, 345km, $235} {TPA, 1984km, $244}  }
+{ RNO:  }
+{ LAX: {BOS, 2611km, $345} {EWR, 2454km, $81} {FAT, 209km, $314} {OMA, 1330km, $249} {TOL, 1952km, $84} {YUM, 237km, $78}  }
+{ TOL: {ATL, 549km, $145} {DTW, 49km, $205}  }
+{ YUM:  }
+{ LBB: {AFW, 265km, $363} {DFW, 282km, $327} {ELP, 295km, $91}  }
+{ LEX: {DTW, 293km, $221}  }
+{ LFT: {DFW, 351km, $242}  }
+{ LGA: {BOS, 185km, $83} {BUF, 292km, $267} {DFW, 1389km, $327} {DTW, 501km, $316} {MDW, 725km, $324} {MIA, 1097km, $310} {ORD, 733km, $216}  }
+{ LIT: {DAL, 296km, $379} {DFW, 304km, $326}  }
+{ LRD: {AUS, 218km, $218} {DFW, 394km, $362} {ELP, 506km, $77}  }
+{ MAF: {DAL, 319km, $254} {DFW, 309km, $192}  }
+{ MBS: {ORD, 222km, $172}  }
+{ MCI: {DTW, 629km, $104}  }
+{ MCO: {ATL, 403km, $268} {DFW, 984km, $180} {MIA, 193km, $127} {ORD, 1005km, $130} {TPA, 80km, $355}  }
+{ MDT: {DTW, 370km, $167}  }
+{ UIN:  }
+{ MEM: {AFW, 444km, $223} {ATL, 332km, $181} {AUS, 559km, $161} {BOS, 1139km, $186} {DAY, 460km, $146} {DTW, 610km, $300} {EWR, 946km, $150} {OMA, 538km, $197} {TPA, 656km, $196}  }
+{ MGM: {ATL, 147km, $293}  }
+{ MKE: {ATL, 669km, $117} {BOS, 860km, $237} {DFW, 853km, $338} {DTW, 238km, $249} {EWR, 725km, $95}  }
+{ MKG: {DAY, 249km, $209}  }
+{ MQT: {FNT, 295km, $181}  }
+{ MSN: {DFW, 821km, $334} {DTW, 312km, $267} {ORD, 109km, $171}  }
+{ MSO: {BTM, 101km, $291}  }
+{ MSP: {BOS, 1124km, $184} {DAY, 574km, $252} {DFW, 852km, $156} {DLH, 144km, $308} {DTW, 528km, $374} {EWR, 1008km, $347} {ORD, 334km, $321}  }
+{ DLH:  }
+{ MSY: {DFW, 448km, $348} {DTW, 926km, $104} {EWR, 1167km, $354} {ORD, 837km, $186} {TPA, 487km, $217}  }
+{ MYR: {BOS, 738km, $375} {DFW, 1048km, $200}  }
+{ OAK: {DFW, 1456km, $183} {LAW, 1345km, $273}  }
+{ OGG: {ITO, 121km, $379}  }
+{ OKC: {DAL, 181km, $220} {DFW, 175km, $128}  }
+{ PIA: {ORD, 130km, $302}  }
+{ ORH: {EWR, 161km, $232}  }
+{ PDX: {EUG, 106km, $295} {ORD, 1739km, $364}  }
+{ EUG:  }
+{ PFN: {ATL, 247km, $181}  }
+{ PHL: {ATL, 665km, $187} {AUS, 1430km, $250} {BOS, 280km, $98} {DFW, 1302km, $100} {DTW, 453km, $317} {ORD, 678km, $170} {TOL, 464km, $195} {TPA, 920km, $175}  }
+{ PHX: {DFW, 868km, $305} {EWR, 2133km, $309} {IAH, 1009km, $108} {OMA, 1037km, $109} {ORD, 1440km, $342} {RNO, 601km, $81} {TUS, 110km, $157}  }
+{ PIT: {ATL, 526km, $318} {DFW, 1068km, $235} {DTW, 201km, $132} {EWR, 319km, $131} {ITH, 239km, $82} {TPA, 873km, $209}  }
+{ ITH:  }
+{ PNS: {DFW, 604km, $349}  }
+{ PVD: {EWR, 160km, $315} {MDW, 842km, $242} {TPA, 1137km, $179}  }
+{ PVU: {FTW, 946km, $186}  }
+{ FTW:  }
+{ PWM: {BGR, 109km, $158} {BOS, 95km, $90} {ORD, 900km, $297}  }
+{ RDU: {BOS, 612km, $222} {DTW, 501km, $172} {EWR, 416km, $235} {MDW, 632km, $276} {ORD, 647km, $302} {TOL, 478km, $225} {TPA, 587km, $90} {YIP, 508km, $241}  }
+{ RFD: {ATL, 643km, $100} {DBQ, 84km, $375}  }
+{ RIC: {ATL, 481km, $138} {ORD, 642km, $275}  }
+{ ROA: {DTW, 382km, $88}  }
+{ ROC: {ATL, 749km, $348} {BOS, 343km, $337}  }
+{ RST: {ORD, 268km, $265}  }
+{ SAN: {DFW, 1171km, $315} {DTW, 1957km, $311}  }
+{ SAT: {AUS, 70km, $285} {ELP, 496km, $177} {LRD, 148km, $87}  }
+{ SBN: {DAY, 166km, $366}  }
+{ SEA: {BOS, 2496km, $328} {DFW, 1660km, $81} {MDW, 1733km, $231} {RNO, 564km, $245} {TUS, 1216km, $344}  }
+{ SFO: {ATL, 2139km, $160} {BOS, 2704km, $97} {DTW, 2079km, $356} {EWR, 2565km, $90} {MDW, 1854km, $321} {ORD, 1846km, $279}  }
+{ SGF: {ACT, 446km, $285}  }
+{ ACT:  }
+{ SHV: {DFW, 190km, $251}  }
+{ SJC: {AUS, 1471km, $267} {BOS, 2689km, $182} {DFW, 1438km, $169} {ELP, 964km, $155}  }
+{ SLC: {ATL, 1589km, $172} {AUS, 1079km, $208} {BOS, 2105km, $190} {BZN, 347km, $101} {DFW, 988km, $356} {ELP, 693km, $287} {FAT, 501km, $230} {GYY, 1277km, $113} {ORD, 1249km, $210} {TUL, 926km, $238}  }
+{ GYY:  }
+{ SMF: {IAH, 1609km, $311}  }
+{ SNA: {DFW, 1205km, $299}  }
+{ SPS: {DFW, 113km, $168}  }
+{ STL: {ATL, 483km, $261} {AUS, 722km, $267} {DTW, 440km, $274} {EWR, 872km, $157} {MDW, 251km, $190} {MWA, 100km, $226} {PIA, 137km, $128}  }
+{ MWA:  }
+{ SYR: {EWR, 194km, $265}  }
+{ TVC: {DTW, 207km, $351}  }
+{ TYS: {ATL, 152km, $180}  }
+================================
+ Dijkstra — Shortest Path: IAD -> MIA
+================================
+Path: IAD -> ATL -> MIA
+Distance: 1128
+Cost: 430
+================================
+ Dijkstra — All Airports in GA (from IAD)
+================================
+To ATL: IAD -> ATL | Distance: 533 | Cost: $108
+To ABY: IAD -> ATL -> ABY | Distance: 679 | Cost: $210
+================================
+ Dijkstra — All Airports in FL (from IAD)
+================================
+To MIA: IAD -> ATL -> MIA | Distance: 1128 | Cost: $430
+To TPA: IAD -> ATL -> TPA | Distance: 939 | Cost: $458
+================================
+ Dijkstra — No Airports Reachable (bad state)
+================================
+No paths found to any airport in XX.
+================================
+ Dijkstra — IAD -> MIA with exactly 1 stop
+================================
+Path with 1 stop(s): IAD -> ATL -> MIA
+Distance: 1128
+================================
+ Dijkstra — IAD -> MIA with exactly 2 stops
+================================
+Path with 2 stop(s): IAD -> ATL -> TPA -> MIA
+Distance: 1143
+================================
+ Dijkstra — Impossible stop count (99)
+================================
+No path from IAD to YKM with exactly 2 stop(s).
+================================
+ Direct Flight Connections (sorted by total)
+================================
+Airport Connections
+ORD 53 connections (Inbound: 43, Outbound: 10)
+DFW 51 connections (Inbound: 46, Outbound: 5)
+ATL 50 connections (Inbound: 38, Outbound: 12)
+DTW 47 connections (Inbound: 42, Outbound: 5)
+EWR 33 connections (Inbound: 27, Outbound: 6)
+BOS 31 connections (Inbound: 27, Outbound: 4)
+TPA 26 connections (Inbound: 19, Outbound: 7)
+MIA 18 connections (Inbound: 12, Outbound: 6)
+AUS 13 connections (Inbound: 10, Outbound: 3)
+IAH 12 connections (Inbound: 6, Outbound: 6)
+DAY 11 connections (Inbound: 9, Outbound: 2)
+MDW 10 connections (Inbound: 9, Outbound: 1)
+SLC 10 connections (Inbound: 0, Outbound: 10)
+BUF 9 connections (Inbound: 5, Outbound: 4)
+ELP 9 connections (Inbound: 8, Outbound: 1)
+MEM 9 connections (Inbound: 0, Outbound: 9)
+LAS 8 connections (Inbound: 0, Outbound: 8)
+PHL 8 connections (Inbound: 0, Outbound: 8)
+RDU 8 connections (Inbound: 0, Outbound: 8)
+ALB 7 connections (Inbound: 3, Outbound: 4)
+YIP 7 connections (Inbound: 5, Outbound: 2)
+LGA 7 connections (Inbound: 0, Outbound: 7)
+MSP 7 connections (Inbound: 0, Outbound: 7)
+PHX 7 connections (Inbound: 0, Outbound: 7)
+STL 7 connections (Inbound: 0, Outbound: 7)
+OMA 6 connections (Inbound: 6, Outbound: 0)
+CLE 6 connections (Inbound: 0, Outbound: 6)
+DAL 6 connections (Inbound: 4, Outbound: 2)
+CLT 6 connections (Inbound: 0, Outbound: 6)
+CMH 6 connections (Inbound: 0, Outbound: 6)
+CVG 6 connections (Inbound: 0, Outbound: 6)
+DCA 6 connections (Inbound: 0, Outbound: 6)
+LAX 6 connections (Inbound: 0, Outbound: 6)
+PIT 6 connections (Inbound: 0, Outbound: 6)
+SFO 6 connections (Inbound: 0, Outbound: 6)
+BWI 5 connections (Inbound: 0, Outbound: 5)
+FNT 5 connections (Inbound: 4, Outbound: 1)
+IAD 5 connections (Inbound: 0, Outbound: 5)
+IND 5 connections (Inbound: 0, Outbound: 5)
+JFK 5 connections (Inbound: 0, Outbound: 5)
+TOL 5 connections (Inbound: 3, Outbound: 2)
+MCO 5 connections (Inbound: 0, Outbound: 5)
+MKE 5 connections (Inbound: 0, Outbound: 5)
+BGR 5 connections (Inbound: 5, Outbound: 0)
+MSY 5 connections (Inbound: 0, Outbound: 5)
+SEA 5 connections (Inbound: 0, Outbound: 5)
+AFW 4 connections (Inbound: 3, Outbound: 1)
+TUL 4 connections (Inbound: 3, Outbound: 1)
+FLL 4 connections (Inbound: 0, Outbound: 4)
+LRD 4 connections (Inbound: 1, Outbound: 3)
+ANC 4 connections (Inbound: 0, Outbound: 4)
+SJC 4 connections (Inbound: 0, Outbound: 4)
+BDL 3 connections (Inbound: 0, Outbound: 3)
+BTM 3 connections (Inbound: 3, Outbound: 0)
+FAT 3 connections (Inbound: 3, Outbound: 0)
+GSO 3 connections (Inbound: 0, Outbound: 3)
+TUS 3 connections (Inbound: 3, Outbound: 0)
+BNA 3 connections (Inbound: 0, Outbound: 3)
+RNO 3 connections (Inbound: 3, Outbound: 0)
+LBB 3 connections (Inbound: 0, Outbound: 3)
+MSN 3 connections (Inbound: 0, Outbound: 3)
+PIA 3 connections (Inbound: 2, Outbound: 1)
+BZN 3 connections (Inbound: 2, Outbound: 1)
+BHM 3 connections (Inbound: 0, Outbound: 3)
+PVD 3 connections (Inbound: 0, Outbound: 3)
+PWM 3 connections (Inbound: 0, Outbound: 3)
+SAT 3 connections (Inbound: 0, Outbound: 3)
+HLN 2 connections (Inbound: 2, Outbound: 0)
+AGS 2 connections (Inbound: 1, Outbound: 1)
+GRR 2 connections (Inbound: 0, Outbound: 2)
+MOB 2 connections (Inbound: 2, Outbound: 0)
+ITO 2 connections (Inbound: 2, Outbound: 0)
+HOU 2 connections (Inbound: 0, Outbound: 2)
+ICT 2 connections (Inbound: 0, Outbound: 2)
+JAX 2 connections (Inbound: 0, Outbound: 2)
+ABY 2 connections (Inbound: 2, Outbound: 0)
+LIT 2 connections (Inbound: 0, Outbound: 2)
+MAF 2 connections (Inbound: 0, Outbound: 2)
+BTR 2 connections (Inbound: 0, Outbound: 2)
+MYR 2 connections (Inbound: 0, Outbound: 2)
+OAK 2 connections (Inbound: 0, Outbound: 2)
+OKC 2 connections (Inbound: 0, Outbound: 2)
+CAK 2 connections (Inbound: 1, Outbound: 1)
+PDX 2 connections (Inbound: 0, Outbound: 2)
+CAE 2 connections (Inbound: 0, Outbound: 2)
+CWA 2 connections (Inbound: 1, Outbound: 1)
+YKM 2 connections (Inbound: 2, Outbound: 0)
+DBQ 2 connections (Inbound: 1, Outbound: 1)
+RFD 2 connections (Inbound: 0, Outbound: 2)
+RIC 2 connections (Inbound: 0, Outbound: 2)
+ROC 2 connections (Inbound: 0, Outbound: 2)
+SAN 2 connections (Inbound: 0, Outbound: 2)
+LAW 2 connections (Inbound: 2, Outbound: 0)
+BIL 2 connections (Inbound: 0, Outbound: 2)
+FWA 1 connections (Inbound: 0, Outbound: 1)
+CMI 1 connections (Inbound: 0, Outbound: 1)
+ABQ 1 connections (Inbound: 0, Outbound: 1)
+COU 1 connections (Inbound: 0, Outbound: 1)
+BFM 1 connections (Inbound: 0, Outbound: 1)
+BPT 1 connections (Inbound: 0, Outbound: 1)
+YUM 1 connections (Inbound: 1, Outbound: 0)
+CRP 1 connections (Inbound: 0, Outbound: 1)
+LEX 1 connections (Inbound: 0, Outbound: 1)
+LFT 1 connections (Inbound: 0, Outbound: 1)
+GEG 1 connections (Inbound: 0, Outbound: 1)
+GGG 1 connections (Inbound: 0, Outbound: 1)
+JNU 1 connections (Inbound: 1, Outbound: 0)
+GJT 1 connections (Inbound: 0, Outbound: 1)
+MBS 1 connections (Inbound: 0, Outbound: 1)
+MCI 1 connections (Inbound: 0, Outbound: 1)
+BRD 1 connections (Inbound: 0, Outbound: 1)
+MDT 1 connections (Inbound: 0, Outbound: 1)
+UIN 1 connections (Inbound: 1, Outbound: 0)
+AMA 1 connections (Inbound: 0, Outbound: 1)
+MGM 1 connections (Inbound: 0, Outbound: 1)
+BJI 1 connections (Inbound: 1, Outbound: 0)
+MKG 1 connections (Inbound: 0, Outbound: 1)
+MQT 1 connections (Inbound: 0, Outbound: 1)
+CSG 1 connections (Inbound: 0, Outbound: 1)
+MSO 1 connections (Inbound: 0, Outbound: 1)
+ATW 1 connections (Inbound: 0, Outbound: 1)
+DLH 1 connections (Inbound: 1, Outbound: 0)
+AHN 1 connections (Inbound: 1, Outbound: 0)
+GNV 1 connections (Inbound: 0, Outbound: 1)
+GRB 1 connections (Inbound: 0, Outbound: 1)
+OGG 1 connections (Inbound: 0, Outbound: 1)
+ALW 1 connections (Inbound: 0, Outbound: 1)
+EAT 1 connections (Inbound: 0, Outbound: 1)
+ORH 1 connections (Inbound: 0, Outbound: 1)
+GSP 1 connections (Inbound: 0, Outbound: 1)
+EUG 1 connections (Inbound: 1, Outbound: 0)
+PFN 1 connections (Inbound: 0, Outbound: 1)
+GTF 1 connections (Inbound: 0, Outbound: 1)
+HNL 1 connections (Inbound: 0, Outbound: 1)
+EYW 1 connections (Inbound: 0, Outbound: 1)
+ITH 1 connections (Inbound: 1, Outbound: 0)
+PNS 1 connections (Inbound: 0, Outbound: 1)
+DSM 1 connections (Inbound: 0, Outbound: 1)
+PVU 1 connections (Inbound: 0, Outbound: 1)
+FTW 1 connections (Inbound: 1, Outbound: 0)
+BTV 1 connections (Inbound: 0, Outbound: 1)
+ADQ 1 connections (Inbound: 1, Outbound: 0)
+BKL 1 connections (Inbound: 0, Outbound: 1)
+FSD 1 connections (Inbound: 0, Outbound: 1)
+ROA 1 connections (Inbound: 0, Outbound: 1)
+AVP 1 connections (Inbound: 0, Outbound: 1)
+RST 1 connections (Inbound: 0, Outbound: 1)
+IDA 1 connections (Inbound: 0, Outbound: 1)
+BMI 1 connections (Inbound: 0, Outbound: 1)
+SBN 1 connections (Inbound: 0, Outbound: 1)
+MLU 1 connections (Inbound: 1, Outbound: 0)
+JAN 1 connections (Inbound: 0, Outbound: 1)
+SGF 1 connections (Inbound: 0, Outbound: 1)
+ACT 1 connections (Inbound: 1, Outbound: 0)
+SHV 1 connections (Inbound: 0, Outbound: 1)
+CHS 1 connections (Inbound: 0, Outbound: 1)
+ABE 1 connections (Inbound: 0, Outbound: 1)
+GYY 1 connections (Inbound: 1, Outbound: 0)
+SMF 1 connections (Inbound: 0, Outbound: 1)
+SNA 1 connections (Inbound: 0, Outbound: 1)
+SPS 1 connections (Inbound: 0, Outbound: 1)
+ACY 1 connections (Inbound: 0, Outbound: 1)
+MWA 1 connections (Inbound: 1, Outbound: 0)
+SYR 1 connections (Inbound: 0, Outbound: 1)
+TVC 1 connections (Inbound: 0, Outbound: 1)
+TYS 1 connections (Inbound: 0, Outbound: 1)
+================================
+ Prim's MST
+================================
+MST cannot be formed because the graph is disconnected.
+================================
+ sKruskal's MST
+================================
+Graph is disconnected. Minimum Spanning Forest:
+MIA -- MDW (Cost: 75)
+ATL -- BNA (Cost: 75)
+DTW -- CLT (Cost: 76)
+ELP -- LRD (Cost: 77)
+LAX -- YUM (Cost: 78)
+MDW -- CMH (Cost: 78)
+DFW -- SEA (Cost: 81)
+RNO -- PHX (Cost: 81)
+EWR -- LAX (Cost: 81)
+PIT -- ITH (Cost: 82)
+ATL -- ORD (Cost: 82)
+DTW -- BMI (Cost: 83)
+ATL -- EWR (Cost: 83)
+BOS -- LGA (Cost: 83)
+LAX -- TOL (Cost: 84)
+BOS -- DFW (Cost: 84)
+IAH -- ATL (Cost: 85)
+DAY -- DCA (Cost: 85)
+LRD -- SAT (Cost: 87)
+DTW -- TPA (Cost: 87)
+AVP -- CAK (Cost: 87)
+DTW -- ROA (Cost: 88)
+MIA -- FLL (Cost: 89)
+BOS -- PWM (Cost: 90)
+TPA -- RDU (Cost: 90)
+EWR -- SFO (Cost: 90)
+ELP -- LBB (Cost: 91)
+ORD -- JFK (Cost: 93)
+ORD -- MIA (Cost: 93)
+DTW -- IAD (Cost: 94)
+ATL -- GSO (Cost: 95)
+EWR -- MKE (Cost: 95)
+DTW -- CVG (Cost: 97)
+BOS -- SFO (Cost: 97)
+BOS -- PHL (Cost: 98)
+ATL -- RFD (Cost: 100)
+DAY -- MIA (Cost: 100)
+ORD -- BUF (Cost: 101)
+BZN -- SLC (Cost: 101)
+ATL -- ABY (Cost: 102)
+AUS -- ATL (Cost: 102)
+DTW -- MSY (Cost: 104)
+DTW -- MCI (Cost: 104)
+GJT -- FAT (Cost: 105)
+ABQ -- IAH (Cost: 106)
+EWR -- CAE (Cost: 106)
+IAH -- PHX (Cost: 108)
+ATL -- IAD (Cost: 108)
+FNT -- IND (Cost: 109)
+OMA -- PHX (Cost: 109)
+OMA -- FWA (Cost: 112)
+SLC -- GYY (Cost: 113)
+IAH -- TUL (Cost: 115)
+ORD -- DBQ (Cost: 116)
+ATL -- YIP (Cost: 118)
+BOS -- BDL (Cost: 121)
+DFW -- GSP (Cost: 121)
+TPA -- CLE (Cost: 123)
+DTW -- GRR (Cost: 123)
+AFW -- AUS (Cost: 123)
+ATL -- JAX (Cost: 124)
+ORD -- ATW (Cost: 126)
+MIA -- MCO (Cost: 127)
+ORD -- ANC (Cost: 128)
+PIA -- STL (Cost: 128)
+DFW -- OKC (Cost: 128)
+EWR -- PIT (Cost: 131)
+ELP -- LAS (Cost: 133)
+ATL -- RIC (Cost: 138)
+YIP -- ELP (Cost: 141)
+DAY -- MEM (Cost: 146)
+DTW -- FNT (Cost: 150)
+DFW -- DAL (Cost: 150)
+ELP -- SJC (Cost: 155)
+EWR -- BHM (Cost: 155)
+ORD -- CWA (Cost: 156)
+DFW -- MSP (Cost: 156)
+TUS -- PHX (Cost: 157)
+EWR -- STL (Cost: 157)
+BGR -- PWM (Cost: 158)
+BOS -- BWI (Cost: 158)
+MIA -- BKL (Cost: 158)
+ALB -- DAY (Cost: 159)
+DFW -- GGG (Cost: 160)
+DFW -- JAN (Cost: 164)
+DTW -- MDT (Cost: 167)
+DFW -- SPS (Cost: 168)
+ORD -- MSN (Cost: 171)
+MIA -- EYW (Cost: 171)
+ATL -- SLC (Cost: 172)
+ORD -- MBS (Cost: 172)
+HLN -- GTF (Cost: 178)
+TPA -- PVD (Cost: 179)
+ATL -- TYS (Cost: 180)
+FNT -- MQT (Cost: 181)
+ATL -- PFN (Cost: 181)
+ICT -- TUS (Cost: 183)
+DFW -- OAK (Cost: 183)
+PVU -- FTW (Cost: 186)
+DFW -- BPT (Cost: 191)
+DFW -- MAF (Cost: 192)
+DFW -- MYR (Cost: 200)
+ORD -- FSD (Cost: 201)
+BIL -- BTM (Cost: 202)
+DAY -- MKG (Cost: 209)
+ORD -- GRB (Cost: 213)
+TPA -- HOU (Cost: 214)
+DTW -- LEX (Cost: 221)
+ACY -- BOS (Cost: 225)
+STL -- MWA (Cost: 226)
+DAY -- COU (Cost: 226)
+FAT -- SLC (Cost: 230)
+EWR -- ORH (Cost: 232)
+AMA -- DFW (Cost: 240)
+DFW -- LFT (Cost: 242)
+DFW -- SHV (Cost: 251)
+ALW -- YKM (Cost: 262)
+DFW -- IDA (Cost: 262)
+ORD -- RST (Cost: 265)
+EWR -- SYR (Cost: 265)
+AGS -- ATL (Cost: 267)
+LAW -- OAK (Cost: 273)
+ANC -- ADQ (Cost: 277)
+BTR -- AHN (Cost: 278)
+SGF -- ACT (Cost: 285)
+BTM -- MSO (Cost: 291)
+ATL -- MGM (Cost: 293)
+ANC -- JNU (Cost: 294)
+PDX -- EUG (Cost: 295)
+ATL -- GNV (Cost: 297)
+DFW -- SNA (Cost: 299)
+ATL -- CSG (Cost: 305)
+BTR -- MLU (Cost: 306)
+MSP -- DLH (Cost: 308)
+DFW -- MOB (Cost: 310)
+DTW -- SAN (Cost: 311)
+IAH -- SMF (Cost: 311)
+BIL -- HLN (Cost: 314)
+ABY -- BFM (Cost: 320)
+BRD -- BJI (Cost: 324)
+BTM -- GEG (Cost: 324)
+DFW -- LIT (Cost: 326)
+BGR -- CHS (Cost: 335)
+BOS -- ROC (Cost: 337)
+ORD -- CMI (Cost: 343)
+DFW -- PNS (Cost: 349)
+YKM -- EAT (Cost: 350)
+DTW -- TVC (Cost: 351)
+MDW -- UIN (Cost: 351)
+HNL -- ITO (Cost: 354)
+DTW -- BTV (Cost: 361)
+ORD -- PDX (Cost: 364)
+ATL -- CAK (Cost: 366)
+DAY -- SBN (Cost: 366)
+ABE -- DTW (Cost: 374)
+ITO -- OGG (Cost: 379)
+IAH -- CRP (Cost: 379)
+ORD -- DSM (Cost: 379)
+Total Cost: 28994

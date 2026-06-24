@@ -1,0 +1,76 @@
+@module "p1"
+
+const Node -> struct {
+  data: int, 
+
+  left:  *Node,
+  right: *Node,
+};
+
+#returns_ownership
+const new_node -> fn (val: int) *Node {
+  let node: *Node = cast<*Node>(alloc(sizeof<Node>));
+
+  node.data = val;
+
+  node.left  = cast<*Node>(0);
+  node.right = cast<*Node>(0);
+
+  return node;
+}
+
+#takes_ownership
+const destroy -> fn (root: *Node) void {
+  if (root == cast<*Node>(0)) return;
+
+  destroy(root.left);
+  destroy(root.right);
+
+  free(root);
+}
+
+#returns_ownership
+const insert -> fn (root: *Node, val: int) *Node {
+  if (root == cast<*Node>(0)) return new_node(val);
+
+  if (val < root.data)   root.left = insert(root.left, val);
+  elif (val > root.data) root.right = insert(root.right, val);
+
+  return root;
+}
+
+const sum_leaves -> fn (root: *Node) int {
+  if (root == cast<*Node>(0))
+    return 0;
+
+  if (root.left == cast<*Node>(0) &&
+      root.right == cast<*Node>(0))
+    return root.data;
+
+  return sum_leaves(root.left) + sum_leaves(root.right);
+}
+
+const print -> fn (root: *Node) void {
+  if (root == cast<*Node>(0)) return;
+
+  print(root.left);
+  output(root.data, " ");
+  print(root.right);
+}
+
+// pub const main -> fn () int {
+//   let vals: [int; 7] = [15, 10, 20, 8, 12, 17, 25];
+
+//   let root: *Node = new_node(vals[0]);
+//   defer { destroy(root); }
+  
+//   loop [i: int = 0](i < 7) : (++i) {
+//     insert(root, vals[i]);
+//   }
+
+//   print(root);
+
+//   output("\nSum of leaves: ", sum_leaves(root), "\n");
+ 
+//   return 0;
+// }

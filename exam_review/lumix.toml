@@ -1,0 +1,13 @@
+[project]
+name      = "review"
+directory = "src"
+entry     = "src/p6.lx"
+
+[build]
+flags = "-O2 --no-sanitize"
+
+[output]
+binary_dir = "bin"
+
+[run]
+args = ""

@@ -1,0 +1,61 @@
+@module "p4"
+
+const V: int = 5;
+const graph: [[int; 5]; 5] = [
+    [0, 1, 1, 0, 0],
+    [1, 0, 0, 1, 1],
+    [1, 0, 0, 0, 1],
+    [0, 1, 0, 0, 0],
+    [0, 1, 1, 0, 0]
+];
+
+// Breadth First Search
+const BFS -> fn (start: int) void {
+    let visited: [bool; 5] = [0];  
+    let queue: [int; 5] = [0];
+
+    let front: int = 0;
+    let rear: int = 0;
+
+    visited[start] = true;
+    queue[rear++]  = start;
+    
+    loop(front < rear) {
+        let v: int = queue[front++];
+
+        output(v, " ");
+
+        loop [i: int = 0](i < V) : (++i) {
+            if (graph[v][i] == 1 && visited[i] == false) {
+                visited[i] = true;
+                queue[rear++] = i;
+            }
+        }
+    }
+}
+
+// Depth First Search
+const DFS -> fn (v: int, visited: *bool) void {
+    visited[v] = true;
+    output(v, " ");
+
+    loop [i: int = 0](i < V) : (++i) {
+        if (graph[v][i] == 1 && visited[i] == false) {
+            DFS(i, visited);
+        }
+    }
+
+    return;
+}
+
+// pub const main -> fn () int {
+//     output("BFS: "); 
+//     BFS(0);
+
+//     let visited: [bool; 5] = [0];
+//     output("\nDFS: "); 
+//     DFS(0, &visited[0]);
+    
+//     output("\n");
+//     return 0;
+// }

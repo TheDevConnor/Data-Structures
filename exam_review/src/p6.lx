@@ -1,0 +1,78 @@
+@module "p6"
+
+@use "std_memory" as mem
+
+const ALPHA: int = 26;
+
+const TrieNode -> struct {
+    children: **TrieNode,
+    isEnd: bool,
+};
+
+const null: *TrieNode = cast<*TrieNode>(0);
+
+const new_node -> fn () *TrieNode {
+    let n: *TrieNode = cast<*TrieNode>(mem::calloc(1, sizeof<TrieNode>));
+
+    n.children = cast<**TrieNode>(mem::calloc(ALPHA, sizeof<*TrieNode>));
+    n.isEnd = false;
+
+    return n;
+}
+
+const insert -> fn (root: *TrieNode, word: *byte) void {
+    let curr: *TrieNode = root;
+
+    loop [i: int = 0](word[i] != '\0') : (++i) {
+        let index: int = cast<int>(word[i]) - 97;
+
+        if (curr.children[index] == null) {
+            curr.children[index] = new_node();
+        }
+        curr = curr.children[index];
+    }
+
+    curr.isEnd = true;
+}
+
+const findPrefix -> fn (root: *TrieNode, prefix: *byte) *TrieNode {
+    let curr: *TrieNode = root;
+    loop [i: int = 0](prefix[i] != '\0') : (++i) {
+        let index: int = cast<int>(prefix[i]) - 97;
+        if (curr.children[index] == null) return null;
+        curr = curr.children[index];
+    }
+    return curr;
+}
+
+const countWords -> fn (node: *TrieNode) int {
+    if (node == null) return 0;
+    let count: int = 0;
+    if (node.isEnd) count = 1;
+    loop [i: int = 0](i < ALPHA) : (++i) {
+        count = count + countWords(node.children[i]);
+    }
+    return count;
+}
+
+const countWithPrefix -> fn (root: *TrieNode, prefix: *byte) int {
+    let node: *TrieNode = findPrefix(root, prefix);
+    if (node != null) {
+        return countWords(node);
+    }
+
+    return 0;
+}
+
+pub const main -> fn () int {
+    let root: *TrieNode = new_node();
+    let words: [*byte; 4] = ["can", "cat", "car", "card"];
+
+    loop [i: int = 0](i < 4) : (++i) { insert(root, words[i]); }
+    
+    output("Words with prefix 'ca': ", countWithPrefix(root, "ca"), "\n");   // 4
+    output("Words with prefix 'car': ", countWithPrefix(root, "car"), "\n"); // 2
+    output("Words with prefix 'dog': ", countWithPrefix(root, "dog"), "\n"); // 0
+
+    return 0;
+}
